@@ -3,6 +3,7 @@ class User < ActiveRecord::Base
 
 
   def slug
+    binding.pry
    self.name.downcase.gsub(" ","-")
   end
 
