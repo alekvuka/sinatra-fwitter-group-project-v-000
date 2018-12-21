@@ -1,3 +1,3 @@
 class Tweet < ActiveRecord::Base
-  has_many :tweets 
+  helongs_to :tweets 
 end
