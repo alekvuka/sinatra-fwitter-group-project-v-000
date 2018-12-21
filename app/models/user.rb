@@ -4,7 +4,7 @@ class User < ActiveRecord::Base
 
   def slug
     binding.pry
-   self.name.downcase.gsub(" ","-")
+   self.username.downcase.gsub(" ","-")
   end
 
   def self.find_by_slug(slug)
